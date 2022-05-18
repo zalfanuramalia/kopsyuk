@@ -29,12 +29,12 @@ Contains an Application Programming Interface (API) using Visual Studio Code app
 
 # Endpoint
 
-1. Vehicles Endpoint
+1. Product Endpoint
 
 | Method          | Endpoint      |           Remarks              |
 | --------------- | ------------- | ------------------------------ |
-| `Post`          | /vehicles     | Used for add new vehicle.      |
-| `Get`           | /vehicles     | Used for get all vehicles.     |
-| `Get`           | /vehicles/:id | Used for detail vehicle by id. |
-| `Patch`         | /vehicles/:id | Used for set vehicles by id.   |
-| `Delete`        | /vehicles/:id | Used for delete vehicle.       |
+| `Post`          | /product      | Used for add new product.      |
+| `Get`           | /product      | Used for get all product.      |
+| `Get`           | /product/:id  | Used for detail product by id. |
+| `Patch`         | /product/:id  | Used for set product by id.    |
+| `Delete`        | /product/:id  | Used for delete product.       |

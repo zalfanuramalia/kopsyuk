@@ -7,7 +7,7 @@ const dataProduct = (req, res) => {
   let { search, page, limit, tool, sort, loc } = req.query
   search = search || ''
   page = ((page != null && page !== '') ? parseInt(page) : 1)
-  limit = ((limit != null && limit !== '') ? parseInt(limit) : 50)
+  limit = ((limit != null && limit !== '') ? parseInt(limit) : 6)
   tool = tool || 'id'
   sort = sort || 'desc'
   const offset = (page - 1) * limit

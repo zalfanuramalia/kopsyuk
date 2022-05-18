@@ -10,6 +10,8 @@ app.use(cors())
 app.use(require('./src/routes'))
 app.use('/uploads', express.static('uploads'))
 
-app.listen(8080, () => {
-  console.log('App listening on port 8080')
+const APP_PORT = process.env.PORT || 3000
+
+app.listen(APP_PORT, () => {
+  console.log(`App running on port ${APP_PORT}`)
 })

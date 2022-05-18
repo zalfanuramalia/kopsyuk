@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 18 Bulan Mei 2022 pada 07.37
+-- Waktu pembuatan: 18 Bulan Mei 2022 pada 10.12
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 7.3.33
 
@@ -45,7 +45,8 @@ INSERT INTO `product` (`id`, `name`, `price`, `stock`, `image`) VALUES
 (9, 'Ice Lemon Tea', 12000, 10, 'https://res.cloudinary.com/fazztrackfw5/image/upload/v1652849195/kopskuy/uploads/product-1652849194310.png'),
 (10, 'Vanilla Milkshake', 23000, 10, 'https://res.cloudinary.com/fazztrackfw5/image/upload/v1652840442/kopskuy/uploads/product-1652840439863.png'),
 (11, 'Matcha Latte', 29000, 10, 'https://res.cloudinary.com/fazztrackfw5/image/upload/v1652837422/kopskuy/uploads/product-1652837416642.png'),
-(12, 'Choco Milkshake', 26000, 10, 'https://res.cloudinary.com/fazztrackfw5/image/upload/v1652838195/kopskuy/uploads/product-1652838192287.png');
+(12, 'Choco Milkshake', 26000, 10, 'https://res.cloudinary.com/fazztrackfw5/image/upload/v1652838195/kopskuy/uploads/product-1652838192287.png'),
+(13, 'Ice Frappucino', 26000, 10, 'https://res.cloudinary.com/fazztrackfw5/image/upload/v1652861519/kopskuy/uploads/product-1652861518778.png');
 
 --
 -- Indexes for dumped tables
@@ -65,7 +66,7 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT untuk tabel `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

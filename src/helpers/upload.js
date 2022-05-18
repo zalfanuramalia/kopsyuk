@@ -25,12 +25,11 @@ const storage = new CloudinaryStorage({
 const fileFilter = (req, file, cb) => {
   const typeImage = [
     'image/jpeg',
-    'image/png',
-    'image/gif'
+    'image/png'
   ]
 
   if (!typeImage.includes(file.mimetype)) {
-    cb(new Error('Type image must be .jpg/.png/.gif'), false)
+    cb(new Error('Type image must be .jpg/.png/'), false)
   } else {
     cb(null, true)
   }

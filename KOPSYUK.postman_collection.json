@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "9b78ad59-71af-49f6-b936-f1feb468d9a2",
+		"name": "KOPSYUK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PRODUCT",
+			"item": [
+				{
+					"name": "GET ALL PRODUCT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/product?search=mat",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"product"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "mat"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PRODUCT BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/product/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"product",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST PRODUCT",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Coffee Milk",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "20000",
+									"type": "default"
+								},
+								{
+									"key": "stock",
+									"value": "10",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/D:/Arkademy/Tugas/WEEK 8/coffee-milk.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/product",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE PRODUCT",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/product/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"product",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE PRODUCT",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Thai Tea",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "28000",
+									"type": "default"
+								},
+								{
+									"key": "stock",
+									"value": "10",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/D:/Arkademy/Tugas/WEEK 8/thai-tea.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/product/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"product",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
